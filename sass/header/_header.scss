@@ -1,0 +1,8 @@
+.header {
+    border-bottom: 1px solid $header-line;
+}
+.header__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
