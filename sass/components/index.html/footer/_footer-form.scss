@@ -45,9 +45,9 @@
     justify-content: space-around;
     align-items: center;
 
-    // margin-left: 12px;
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &--indent{
+        margin-left: 12px;
+    }
 }
 
 .footer-wrap__icon {
