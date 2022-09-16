@@ -1,10 +1,12 @@
+// аутентифікація хедеру
+
 .auth-list {
     display: flex;
     align-items: center;
 }
 
 .auth-list__item {
-    &+&{
+    & + & {
     margin-left: 50px
     }
 }
@@ -25,7 +27,7 @@
     transition: color $timing-function;
 
     &:hover,
-        &:focus {
+    &:focus {
             color: $active-color;
             fill: $active-color;
         }
