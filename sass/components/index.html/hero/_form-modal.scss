@@ -1,0 +1,155 @@
+// Стилі input
+
+.form-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-modal__field {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+
+    &--margin {
+            margin-bottom: 20px;
+        }
+                &--indent {
+                    margin-bottom: 30px;
+                }
+}
+
+.form-modal__label {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+
+    color: $secondary-color;
+}
+
+.form-modal__input {
+    width: 448px;
+    height: 40px;
+
+    padding-left: 42px;
+
+    border: none;
+    outline: 1px solid $modal-border-color;
+    border-radius: 4px;
+
+    transition: outline $timing-function;
+
+    &:hover,
+    &:focus{
+        outline: 1px solid $active-color;
+    }
+}
+
+.form-modal__icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+
+    transition: fill $timing-function;
+    .form-modal__input:focus ~ &,
+    .form-modal__input:hover ~ & {
+        fill: $active-color;
+    }
+}
+
+.form-modal__area {
+    width: 448px;
+    height: 120px;
+
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+
+    padding-top: 12px;
+    padding-left: 16px;
+
+    color: $text-area-color;
+
+    outline: 1px solid $modal-border-color;
+    border: none;
+    border-radius: 4px;
+
+    resize: none;
+    transition: outline $timing-function;
+
+    &:focus,
+    &:hover {
+            outline: 1px solid $active-color;
+        }
+}
+
+.button-shadow {
+    transition: box-shadow $timing-function;
+
+    &:hover{
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+    }
+}
+
+.check {
+    cursor: pointer;
+}
+
+.check__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    font-size: 14px;
+    line-height: calc(24 / 14);
+
+    letter-spacing: 0.03em;
+
+    color: $secondary-color;
+}
+
+.check__icon {
+    display: inline-flex;
+
+    width: 15px;
+    height: 15px;
+
+    border: 2px solid $main-color;
+    border-radius: 4px;
+
+    .check__input:checked + & {
+        background-color: $active-color;
+        border-color: $active-color;
+    }
+}
+
+.check__svg {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+
+    border-radius: 4px;
+    fill: transparent;
+
+    transition: fill $timing-function, background-color $timing-function;
+
+    .check__input:checked ~ & {
+        fill: $white-color;
+        background-color: $active-color;
+    }
+}
+
+.check__link {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+
+    letter-spacing: 0.03em;
+
+    color: $active-color;
+}

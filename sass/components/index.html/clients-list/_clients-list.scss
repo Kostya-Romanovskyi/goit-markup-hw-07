@@ -1,0 +1,25 @@
+/* Постійні клієнти */
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clients-list__link {
+    display: block;
+    padding: 16px 32px;
+    fill: $icon-color;
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+
+    transition: border $timing-function;
+
+    &:hover,
+    &:focus {
+        border: 1px solid $active-color;
+        fill: $active-color;
+    }
+}
+.clients-list__icon {
+    transition: fill $timing-function;
+}

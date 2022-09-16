@@ -1,0 +1,13 @@
+.logo {
+@extend %logo;
+
+    &--color {
+            color: $active-color;
+        }
+                &--white {
+                    color: $white-color;
+                }
+}
+
+
+

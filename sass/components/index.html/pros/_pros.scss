@@ -1,0 +1,42 @@
+.pros-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pros-list__item {
+    width: calc((100% - 90px) / 4);
+}
+
+.pros-list__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $bg-light;
+}
+
+.pros-list__icon {
+    border-radius: 4px;
+
+    background-color: $bg-light;
+}
+.pros-list__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.pros-list__text {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+
+    letter-spacing: 0.03em;
+
+    color: $secondary-color;
+}

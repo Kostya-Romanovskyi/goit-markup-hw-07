@@ -1,0 +1,75 @@
+// АДРЕСА
+
+.logo--indent {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.address-list {
+    display: block;
+    margin-left: 0;
+}
+.address-list__item {
+    margin-left: 50px;
+    position: relative;
+
+    margin-left: 0;
+    margin-bottom: 9px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+}
+
+.address-list__link {
+    display: block;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+
+    color: $main-color;
+
+    text-decoration: none;
+
+    transition: color $timing-function;
+
+    &:hover,
+    &:focus {
+        color: $active-color;
+
+    }
+        &--white {
+            color: $white-color;
+        }
+    
+        &--rgba {
+            display: inline-block;
+            color: $link-color-rgba-60;
+        }
+                &--indent {
+                    padding: 32px 0;
+                }
+}
+.address-list__link.current {
+    color: $active-color;
+
+    &::after {
+        content: '';
+        display: block;
+
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 4px;
+        width: 100%;
+
+        border-radius: 2px;
+        background-color: $active-color;
+    }
+}
+
+.footer__address {
+    font-style: normal;
+}

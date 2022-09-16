@@ -26,6 +26,7 @@
 }
 .button {
 @extend %button;
+@include indent (10px 32px);
 
 &--center{
     margin: 0 auto;
